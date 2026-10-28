@@ -1,0 +1,7 @@
+{
+  "name": "exp-03-loader",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=development --config webpack.config.js"
+  }
+}

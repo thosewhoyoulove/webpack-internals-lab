@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>实验 07 · HMR</title>
+</head>
+<body>
+  <h1>实验 07：Dev Server 与 HMR</h1>
+  <button id="inc">+1</button>
+  <p id="app">…</p>
+  <p id="status"></p>
+  <ol>
+    <li>先点几次 +1，记住 count</li>
+    <li>修改 <code>src/counter.js</code> 里的文案后保存 → 期望 count 保留（HMR）</li>
+    <li>修改 <code>src/entry.js</code> 顶层逻辑且未正确 accept → 可能整页刷新（Live Reload）</li>
+    <li>DevTools → Network → WS，观察 websocket 消息</li>
+  </ol>
+</body>
+</html>

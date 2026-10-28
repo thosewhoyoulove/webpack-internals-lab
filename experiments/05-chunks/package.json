@@ -1,0 +1,7 @@
+{
+  "name": "exp-05-chunks",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=development --config webpack.config.js"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "webpack-internals-lab",
+  "version": "1.0.0",
+  "description": "Webpack 5 Internals Lab — runnable experiments for learning how Webpack works",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build:01": "npm run build --prefix experiments/01-basic",
+    "build:01:dev": "npm run build:dev --prefix experiments/01-basic",
+    "build:01:prod": "npm run build:prod --prefix experiments/01-basic",
+    "build:02": "npm run build --prefix experiments/02-module-graph",
+    "lab:02-graph": "npm run graph --prefix experiments/02-module-graph",
+    "build:03": "npm run build --prefix experiments/03-loader",
+    "build:04": "npm run build --prefix experiments/04-plugin",
+    "build:05": "npm run build --prefix experiments/05-chunks",
+    "build:06": "npm run build --prefix experiments/06-tree-shaking",
+    "build:06:dev": "npm run build:dev --prefix experiments/06-tree-shaking",
+    "build:06:prod": "npm run build:prod --prefix experiments/06-tree-shaking",
+    "dev:07": "npm run start --prefix experiments/07-hmr",
+    "build:08": "npm run bench --prefix experiments/08-performance",
+    "build:all": "node scripts/build-all.js",
+    "mini:build": "node mini-webpack/src/cli.js mini-webpack/examples/basic/entry.js -o mini-webpack/examples/basic/dist/bundle.js",
+    "mini:build:debug": "node mini-webpack/src/cli.js mini-webpack/examples/basic/entry.js -o mini-webpack/examples/basic/dist/bundle.js --debug",
+    "mini:circular": "node mini-webpack/src/cli.js mini-webpack/examples/circular/entry.js -o mini-webpack/examples/circular/dist/bundle.js --debug",
+    "mini:test": "node mini-webpack/tests/run.js",
+    "mini:inspect": "node --inspect-brk mini-webpack/src/cli.js mini-webpack/examples/basic/entry.js -o mini-webpack/examples/basic/dist/bundle.js --debug"
+  },
+  "keywords": [
+    "webpack",
+    "internals",
+    "lab",
+    "education"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/generator": "^7.26.5",
+    "@babel/parser": "^7.26.5",
+    "@babel/traverse": "^7.26.5",
+    "@babel/types": "^7.26.5",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "workspaces": [
+    "experiments/01-basic",
+    "experiments/02-module-graph",
+    "experiments/03-loader",
+    "experiments/04-plugin",
+    "experiments/05-chunks",
+    "experiments/06-tree-shaking",
+    "experiments/07-hmr",
+    "experiments/08-performance"
+  ]
+}

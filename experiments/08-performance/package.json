@@ -1,0 +1,8 @@
+{
+  "name": "exp-08-performance",
+  "private": true,
+  "scripts": {
+    "bench": "node bench.js",
+    "build": "node bench.js"
+  }
+}

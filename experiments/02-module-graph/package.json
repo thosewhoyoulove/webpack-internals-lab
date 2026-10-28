@@ -1,0 +1,9 @@
+{
+  "name": "exp-02-module-graph",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=development --config webpack.config.js",
+    "graph": "node scripts/print-graph.js",
+    "run:bundle": "node dist/bundle.js"
+  }
+}

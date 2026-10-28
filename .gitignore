@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.webpack-cache/
+*.log
+.DS_Store
+mini-webpack/examples/**/dist/
+mini-webpack/tests/_tmp_bundle.js
+mini-webpack/tests/_cache_fixture/
+experiments/**/dist/
+experiments/08-performance/.webpack-cache/

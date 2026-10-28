@@ -1,0 +1,7 @@
+{
+  "name": "exp-04-plugin",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=development --config webpack.config.js"
+  }
+}

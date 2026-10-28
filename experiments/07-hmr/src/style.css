@@ -1,0 +1,15 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 2rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+#status {
+  margin-top: 1rem;
+  color: #38bdf8;
+}

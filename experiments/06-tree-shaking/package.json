@@ -1,0 +1,13 @@
+{
+  "name": "exp-06-tree-shaking",
+  "private": true,
+  "sideEffects": [
+    "./src/side-effect-mod.js",
+    "./src/entry.js"
+  ],
+  "scripts": {
+    "build": "webpack --mode=production --config webpack.config.js",
+    "build:dev": "webpack --mode=development --config webpack.config.js",
+    "build:prod": "webpack --mode=production --config webpack.config.js"
+  }
+}
